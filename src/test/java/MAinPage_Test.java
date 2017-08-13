@@ -9,6 +9,6 @@ public class MAinPage_Test extends SelDriver {
     public void goToGoogle(){
         driver.get("http://www.google.com");
         driver.get("");
-        ///DSJKHBFKJDSBHFJKDSBKJFESADBIOUFSZ
+        ///DSJKHBFKJDSBHFJKDSBKJFESADBIOUFSZgututu
     }
 }
