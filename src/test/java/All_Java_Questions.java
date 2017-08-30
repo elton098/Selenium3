@@ -1,15 +1,17 @@
+import javafx.util.converter.IntegerStringConverter;
+
 import java.io.CharArrayReader;
 import java.util.Arrays;
 
 /**
  * Created by Kyle Alex on 8/13/2017.
  */
-public class test {
+public class All_Java_Questions {
 
 
 
     public static void main(String [] args){
-
+        intFlip(1234567);
         findOneOfChar ("Ssittp");
         removeWord("duck", 'k');
         wordFlip("Buck rodgers");
@@ -120,8 +122,27 @@ public class test {
 
 
 
-}}}}}
+}}}}public static int intFlip(int number){
+       //Method flips an integer
+        //Intial string which converts integer into a string
+        String flip = Integer.toString(number);
+        //new string that reverses string
+        String flipIndex = new String();
+        // By using the substring method to get individual string vales the characters can easily be added
+        for(int x = 0; x< flip.length(); x ++){
+           // to work backwards always go -1 for first value -x for second to have it only return one value
+            flipIndex += flip.substring(flip.length()-1 -x, flip.length() -x);
+        }
+          //Convert string into int using parse int within the Integer class covered in detail in OCA manual
+        int reverseNumber = Integer.parseInt(flipIndex);
+        System.out.println(reverseNumber);
 
+
+
+
+
+        return reverseNumber;
+    }}
 
 
 
